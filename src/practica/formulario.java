@@ -28,7 +28,8 @@ public class formulario extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        lblboton = new javax.swing.JLabel();
+        lblboton2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -39,7 +40,9 @@ public class formulario extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("jLabel1");
+        lblboton.setText("jLabel1");
+
+        lblboton2.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -52,7 +55,9 @@ public class formulario extends javax.swing.JFrame {
                         .addComponent(jButton1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(173, 173, 173)
-                        .addComponent(jLabel1)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblboton2)
+                            .addComponent(lblboton))))
                 .addContainerGap(171, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -61,15 +66,18 @@ public class formulario extends javax.swing.JFrame {
                 .addGap(94, 94, 94)
                 .addComponent(jButton1)
                 .addGap(58, 58, 58)
-                .addComponent(jLabel1)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addComponent(lblboton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addComponent(lblboton2)
+                .addGap(39, 39, 39))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        lblboton.setText("Hola ");
+        lblboton2.setText("Mundo xd");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -109,6 +117,7 @@ public class formulario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblboton;
+    private javax.swing.JLabel lblboton2;
     // End of variables declaration//GEN-END:variables
 }
