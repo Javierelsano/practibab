@@ -78,7 +78,7 @@ public class formulario extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         lblboton.setText("Hola ");
         lblboton2.setText("Mundo xd");
-        lblboton3.setText("holis");
+        lblboton3.setText("esta bien");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
